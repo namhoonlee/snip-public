@@ -20,4 +20,4 @@ If you use this code for your work, please cite the following:
 
 ## License
 This project is licensed under the MIT License.
-See the [LICENSE](https://github.com/namhoonlee/snip-public/LICENSE) file for details.
+See the [LICENSE](https://github.com/namhoonlee/snip-public/blob/master/LICENSE) file for details.
