@@ -4,7 +4,7 @@ This repository contains code for the paper [SNIP: Single-shot Network Pruning b
 ## Prerequisites
 
 ### Dependencies
-* tensorflow < 1.13
+* tensorflow < 2
 * python 2.7 or python 3.6
 * packages in `requirements.txt`
 
@@ -17,6 +17,10 @@ Put the following datasets in your preferred location (e.g., `./data`).
 To run the code (LeNet on MNIST by default):
 ```
 python main.py --path_data=./data
+```
+For example, in order to reproduce results for VGG-D:
+```
+python main.py --logdir ./reproduce-vgg --path_data ./data --datasource cifar-10 --aug_kinds fliplr translate_px --arch vgg-d --target_sparsity 0.95 --batch_size 128 --train_iterations 150000 --optimizer momentum --lr_decay_type piecewise --decay_boundaries 30000 60000 90000 120000 --decay_values 0.1 0.02 0.004 0.0008 0.00016
 ```
 See `main.py` to run with other options.
 
