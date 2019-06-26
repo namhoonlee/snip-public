@@ -29,7 +29,7 @@ def parse_arguments():
     parser.add_argument('--decay_values', nargs='+', type=float, default=[], help='values for piecewise_constant decay')
     # Initialization
     parser.add_argument('--initializer_w_bp', type=str, default='vs', help='initializer for w before pruning')
-    parser.add_argument('--initializer_b_bp', type=str, default='vs', help='initializer for b before pruning')
+    parser.add_argument('--initializer_b_bp', type=str, default='zeros', help='initializer for b before pruning')
     parser.add_argument('--initializer_w_ap', type=str, default='vs', help='initializer for w after pruning')
     parser.add_argument('--initializer_b_ap', type=str, default='zeros', help='initializer for b after pruning')
     # Logging, saving, options
